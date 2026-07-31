@@ -1,70 +1,38 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-/test-results
-
-# next.js
-/.next/
-/out/
-
-# vitepress (docs site)
-.vitepress/cache
-.vitepress/dist
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
+# 临时/诊断文件
+__pycache__/
+*.pyc
+*.log
+test_*.py
+test_*.js
+debug_*.py
+check_*.py
+analyze_*.py
+read_*.py
+list_*.py
+fix_*.py
+migrate_news.py
+rebuild_news*.py
+write_news_batch.py
+add_images_to_idea.py
+fetch_design_images.py
+recreate_design_db.py
+set_page_covers.py
+verify_final.py
+plan_migration.py
+app_chunk.js
+ligan_home.html
+me_icon.png
+test_img.jpeg
+preview_logo.jpg
+get_icon.js
+test_anon.js
+test_newdb.js
+test_siteconfig.js
+test_upload*.py
+test_upload*.js
+/tmp/
+node_modules/
+.next/
+out/
 .env.local
-.env.docs.local
-.env.development.local
-.env.test.local
-.env.production.local
-.env
-
-# vercel
-.vercel
-
-# dev
-/data.json
-/pnpm-lock.yaml
-.codex-temp/
-.codex-remote-attachments/
-.codex-*.md
-tmp-followup-*.md
-notionnext-*-comment.txt
-output/
-.idea
-.vscode
-
-
-# sitemap
-/public/robots.txt
-/public/sitemap.xml
-/public/rss/*
-/sitemap.xml
-
-# yarn
-package-lock.json
-# yarn.lock
-
-.notion-api-lock
-.tmp/
-.perf/
-tsconfig.tsbuildinfo
-webpack-internal:/
+.env*.local

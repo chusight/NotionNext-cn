@@ -347,7 +347,7 @@ const LayoutBase = ({ children }) => (
 )
 
 const LayoutIndex = props => {
-  const siteIcon = props?.siteInfo?.icon || siteConfig('AVATAR', '/avatar.svg', props?.NOTION_CONFIG) || '/avatar.svg'
+  const siteIcon = siteConfig('AVATAR', props?.siteInfo?.icon || '/avatar.svg', props?.NOTION_CONFIG) || '/avatar.svg'
   const siteCover = props?.siteInfo?.pageCover || siteConfig('HOME_BANNER_IMAGE', '', props?.NOTION_CONFIG)
 
   return (

@@ -19,10 +19,13 @@ export default function PostHeader({ post, siteInfo, isDarkMode, lock }) {
   // 文章头图
   const headerImage = post?.pageCover ? post.pageCover : siteInfo?.pageCover
   const ANALYTICS_BUSUANZI_ENABLE = siteConfig('ANALYTICS_BUSUANZI_ENABLE')
+  // 单页（Page 类型，无分类无标签）降低头部高度，避免顶部大片空白
+  const isPage = !post?.category && !post?.tagItems?.length
+  const headerHeight = isPage ? 'h-[16rem]' : 'h-[30rem]'
   return (
     <div
       id='post-bg'
-      className='md:mb-0 -mb-5 w-full h-[30rem] relative md:flex-shrink-0 overflow-hidden bg-cover bg-center bg-no-repeat z-10'
+      className={`md:mb-0 -mb-5 w-full ${headerHeight} relative md:flex-shrink-0 overflow-hidden bg-cover bg-center bg-no-repeat z-10`}
       style={{
         '--heo-post-bg-accent': isDarkMode
           ? 'var(--heo-color-accent)'

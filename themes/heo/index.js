@@ -254,6 +254,14 @@ const LayoutSlug = props => {
 
   const [hasCode, setHasCode] = useState(false)
 
+  // 单页(Page 类型)标记，用于瀑布流等单页专属样式
+  useEffect(() => {
+    if (post?.type === 'Page') {
+      document.body.classList.add('is-notion-page')
+    }
+    return () => document.body.classList.remove('is-notion-page')
+  }, [post?.type])
+
   useEffect(() => {
     const hasCode = document.querySelectorAll('[class^="language-"]').length > 0
     setHasCode(hasCode)

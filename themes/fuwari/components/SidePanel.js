@@ -36,7 +36,7 @@ const SidePanel = props => {
         <SmartLink href={siteConfig('FUWARI_PROFILE_PATH', '/about', CONFIG)} className='fuwari-profile-link block mb-2.5'>
           <div className='fuwari-profile-thumb relative overflow-hidden rounded-2xl'>
             <LazyImage
-              src={siteInfo?.icon}
+              src={siteConfig('AVATAR', siteInfo?.icon, props?.NOTION_CONFIG) || siteInfo?.icon}
               alt={siteConfig('AUTHOR') || title}
               className='w-full aspect-square object-cover'
             />

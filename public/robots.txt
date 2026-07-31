@@ -1,0 +1,12 @@
+
+    # *
+    User-agent: *
+    Allow: /
+  
+    # Host
+    Host: https://ligan.cc
+  
+    # Sitemaps
+    Sitemap: https://ligan.cc/sitemap.xml
+  
+    

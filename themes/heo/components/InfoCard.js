@@ -81,7 +81,7 @@ export function InfoCard(props) {
               : 'cursor-pointer'
           } justify-center items-center flex dark:text-gray-100 transform transition-all duration-200`}>
           <LazyImage
-            src={siteInfo?.icon}
+            src={'/logo-nav.png'}
             className='rounded-full'
             width={useBlurAvatar ? 100 : 28}
             height={useBlurAvatar ? 100 : 28}

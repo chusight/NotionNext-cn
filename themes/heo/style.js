@@ -165,6 +165,25 @@ const Style = () => {
         }
       }
 
+      /* 单页(Page 类型)内图片瀑布流: body.is-notion-page 由 LayoutSlug 标记，文章页不受影响 */
+      body.is-notion-page article[id='article-wrapper'] main {
+        column-count: 2;
+        column-gap: 16px;
+      }
+
+      body.is-notion-page article[id='article-wrapper'] .notion-asset-wrapper-image {
+        width: 100% !important;
+        display: inline-block;
+        margin-bottom: 16px;
+        break-inside: avoid;
+      }
+
+      body.is-notion-page article[id='article-wrapper'] .notion-asset-wrapper-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
       ${themeConsoleStyle('heo', CONFIG)}
   `}</style>
   )

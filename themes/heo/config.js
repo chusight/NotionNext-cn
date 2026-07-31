@@ -20,12 +20,12 @@ const CONFIG = {
   HEO_COLOR_TEXT: '#111827',
   HEO_COLOR_TEXT_SECONDARY: '#4b5563',
 
-  HEO_SITE_CREATE_TIME: '2021-09-21', // 建站日期，用于计算网站运行的第几天
+  HEO_SITE_CREATE_TIME: '2020-09-01', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '欢迎来到我的博客', url: 'https://blog.tangly1024.com' },
-    { title: '访问文档中心获取更多帮助', url: 'https://docs.tangly1024.com' }
+    { title: '欢迎来到 lee 的 LOFT 空间', url: 'https://ligan.cc' },
+    { title: '当你停止创造，你的才能就不再重要。所以，创造。', url: 'https://ligan.cc' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -34,19 +34,19 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享编程',
-  HEO_HERO_TITLE_2: '与思维认知',
-  HEO_HERO_TITLE_3: 'TANGLY1024.COM',
-  HEO_HERO_TITLE_4: '新版上线',
-  HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
-  HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
+  HEO_HERO_TITLE_1: '化繁为简，',
+  HEO_HERO_TITLE_2: '做出超出普通人认知的产品',
+  HEO_HERO_TITLE_3: 'LEE · LOFT',
+  HEO_HERO_TITLE_4: '工业设计师 / 医疗器械项目经理',
+  HEO_HERO_TITLE_5: '高级工业设计工程师，崇尚化繁为简理念。关注 AI、AR/VR、计算机图形学、医疗器械与传感器等前沿方向。',
+  HEO_HERO_TITLE_LINK: 'https://ligan.cc',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '随便逛逛',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
-  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' },
-  HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' },
+  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/前沿科技' },
+  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/AI' },
+  HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/工业设计' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推荐',
@@ -58,26 +58,33 @@ const CONFIG = {
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    '你好！我是',
-    '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
-    '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    '你好！我是 lee',
+    '🔍 工业设计师 / 医疗器械项目经理',
+    '🤝 专注产品外观与 UI 设计',
+    '🏃 化繁为简的行动派',
+    '🤖️ 科技与 AI 前沿爱好者',
+    '🧱 服务设计与项目管理'
   ],
 
   // 个人资料底部按钮
-  HEO_INFO_CARD_URL1: '/about',
+  HEO_INFO_CARD_URL1: '/me',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
-  HEO_INFO_CARD_URL2: 'https://github.com/tangly1024',
+  HEO_INFO_CARD_URL2: 'https://github.com/',
   HEO_INFO_CARD_ICON2: 'fab fa-github',
   HEO_INFO_CARD_ICON_ORCID: 'fab fa-orcid',
-  HEO_INFO_CARD_URL3: 'https://www.tangly1024.com',
-  HEO_INFO_CARD_TEXT3: '了解更多',
+  HEO_INFO_CARD_URL3: '/connect',
+  HEO_INFO_CARD_TEXT3: '联系我',
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
+    {
+      title_1: 'Rhino',
+      img_1: '/images/heo/20231ca53fa0b09a3ff1df89acd7515e9516173302.webp',
+      color_1: '#1f1f1f',
+      title_2: 'Photoshop',
+      img_2: '/images/heo/2023e4058a91608ea41751c4f102b131f267075902.webp',
+      color_2: '#4082c3'
+    },
     {
       title_1: 'AfterEffect',
       img_1: '/images/heo/20239df3f66615b532ce571eac6d14ff21cf072602.webp',
@@ -85,30 +92,6 @@ const CONFIG = {
       title_2: 'Sketch',
       img_2: '/images/heo/2023e0ded7b724a39f12d59c3dc8fbdc7cbe074202.webp',
       color_2: '#ffffff'
-    },
-    {
-      title_1: 'Docker',
-      img_1: '/images/heo/20231108a540b2862d26f8850172e4ea58ed075102.webp',
-      color_1: '#57b6e6',
-      title_2: 'Photoshop',
-      img_2: '/images/heo/2023e4058a91608ea41751c4f102b131f267075902.webp',
-      color_2: '#4082c3'
-    },
-    {
-      title_1: 'FinalCutPro',
-      img_1: '/images/heo/20233e777652412247dd57fd9b48cf997c01070702.webp',
-      color_1: '#ffffff',
-      title_2: 'Python',
-      img_2: '/images/heo/20235c0731cd4c0c95fc136a8db961fdf963071502.webp',
-      color_2: '#ffffff'
-    },
-    {
-      title_1: 'Swift',
-      img_1: '/images/heo/202328bbee0b314297917b327df4a704db5c072402.webp',
-      color_1: '#eb6840',
-      title_2: 'Principle',
-      img_2: '/images/heo/2023f76570d2770c8e84801f7e107cd911b5073202.webp',
-      color_2: '#8f55ba'
     },
     {
       title_1: 'illustrator',
@@ -130,6 +113,14 @@ const CONFIG = {
       title_1: 'Git',
       img_1: '/images/heo/2023ffa5707c4e25b6beb3e6a3d286ede4c6071102.webp',
       color_1: '#df5b40',
+      title_2: 'Python',
+      img_2: '/images/heo/20235c0731cd4c0c95fc136a8db961fdf963071502.webp',
+      color_2: '#ffffff'
+    },
+    {
+      title_1: 'Docker',
+      img_1: '/images/heo/20231108a540b2862d26f8850172e4ea58ed075102.webp',
+      color_1: '#57b6e6',
       title_2: 'Rhino',
       img_2: '/images/heo/20231ca53fa0b09a3ff1df89acd7515e9516173302.webp',
       color_2: '#1f1f1f'
@@ -137,10 +128,10 @@ const CONFIG = {
   ],
 
   HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
-  HEO_SOCIAL_CARD_TITLE_1: '交流频道',
-  HEO_SOCIAL_CARD_TITLE_2: '加入我们的社群讨论分享',
-  HEO_SOCIAL_CARD_TITLE_3: '点击加入社群',
-  HEO_SOCIAL_CARD_URL: 'https://docs.tangly1024.com/article/how-to-question',
+  HEO_SOCIAL_CARD_TITLE_1: '联系我',
+  HEO_SOCIAL_CARD_TITLE_2: '欢迎交流与合作',
+  HEO_SOCIAL_CARD_TITLE_3: '点击联系',
+  HEO_SOCIAL_CARD_URL: '/connect',
 
   // 底部统计面板文案
   HEO_POST_COUNT_TITLE: '文章数:',
