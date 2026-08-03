@@ -236,14 +236,17 @@ function TopGroup(props) {
       {/* 置顶推荐文章 */}
       <div
         id='top-group'
-        className='w-full flex space-x-3 xl:space-x-0 xl:grid xl:grid-cols-3 xl:gap-3 xl:h-[342px]'>
+        className='w-full flex space-x-3 xl:space-x-0 xl:grid xl:grid-cols-3 xl:grid-rows-2 xl:gap-3 xl:h-full'>
         {topPosts?.map((p, index) => {
           return (
-            <SmartLink href={`${siteConfig('SUB_PATH', '')}/${p?.slug}`} key={index}>
-              <div className='cursor-pointer h-[164px] group relative flex flex-col w-52 xl:w-full overflow-hidden shadow bg-white dark:bg-black dark:text-white rounded-xl'>
+            <SmartLink
+              href={`${siteConfig('SUB_PATH', '')}/${p?.slug}`}
+              key={index}
+              className='xl:h-full'>
+              <div className='cursor-pointer h-[164px] xl:h-full group relative flex flex-col w-52 xl:w-full overflow-hidden shadow bg-white dark:bg-black dark:text-white rounded-xl'>
                 <LazyImage
                   priority={index === 0}
-                  className='h-24 object-cover'
+                  className='h-24 xl:h-auto xl:flex-1 xl:min-h-0 object-cover'
                   alt={p?.title}
                   src={p?.pageCoverThumbnail || siteInfo?.pageCover}
                 />
@@ -309,6 +312,12 @@ function getTopPosts({ latestPosts, allNavPages }) {
       topPosts.push(post)
     }
   }
+
+  // 没有带指定标签的文章时，回退展示最新文章，避免右侧区域留白
+  if (topPosts.length === 0) {
+    return (latestPosts || []).slice(0, 6)
+  }
+
   return topPosts
 }
 
