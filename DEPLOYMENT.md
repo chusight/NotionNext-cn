@@ -535,3 +535,49 @@ yarn bundle-report
 3. 测试新功能
 4. 部署到生产环境
 5. 监控运行状态
+
+### ligan.cc 本地升级指南（2026-08 实战验证）
+
+升级到 NotionNext 官方 main 分支最新状态，保留本地定制（README、heo 主题 Hero.js/SideRight.js 等），重建并部署。完整流程详见 Hermes 技能 `notionnext-upgrade`。
+
+```bash
+cd /c/Users/Administrator/projects/notionnext-loft
+
+# 1. 版本差异对比（本机 origin 是镜像 chusight/NotionNext-cn，官方需加 upstream）
+git remote add upstream https://github.com/notionnext-org/NotionNext.git 2>/dev/null || true
+git fetch upstream main
+git rev-list --left-right --count HEAD...upstream/main   # "本地领先\t官方领先"
+git log --oneline HEAD..upstream/main | head -20          # 官方新增提交
+
+# 2. 合并前把本地未提交定制先提交存档（否则 merge 可能覆盖）
+git add themes/heo/components/Hero.js themes/heo/components/SideRight.js
+git commit -m "fix(heo): 保留本地定制（更新前存档）"
+
+# 3. 合并官方更新（期望零冲突）
+git merge upstream/main --no-edit
+git diff --name-only --diff-filter=U        # 应为空；README 冲突保留本地版
+
+# 4. 依赖 + 测试（⚠️ 测试必须 --runInBand 串行，见下方 SWC 坑）
+yarn install
+yarn run test --runInBand                  # 期望 38/38 套件通过
+yarn run lint
+
+# 5. 构建 + 部署
+yarn export > /tmp/build_upgrade.log 2>&1; echo "EXIT=$?"   # 期望 EXIT=0 + Generating static pages
+export CLOUDFLARE_API_TOKEN="<Pages token，见 cron jobs.json>"
+wrangler pages deploy out --project-name=loft
+
+# 6. 验证（用部署返回的 hash URL，主域名有边缘缓存）
+curl -s -o /dev/null -w "HTTP:%{http_code}\n" "https://<hash>.loft-cnn.pages.dev/"
+curl -s "https://<hash>.loft-cnn.pages.dev/" | grep -oE "最新文章标题关键词"
+
+# 7. 提交收尾前检查未跟踪文件——禁止把敏感脚本提交进 git
+git status --short | grep "^??"
+# get_token.ps1 / decrypt_gh.ps1 / get_github_cred.ps1 / capture_gcm.py 等一律 git rm --cached + 加入 .gitignore
+```
+
+**已知坑（Windows 本机）**：
+- **SWC DLL 初始化失败**：`yarn install` 后测试并行模式报 `@next/swc-win32-x64-msvc DLL initialization routine failed`，套件批量崩溃——环境问题非代码问题。修复：`rm -rf node_modules/@next/swc-win32-x64-msvc && yarn install --force` 重装；测试用 `--runInBand` 串行即全部通过。
+- 构建日志的 `Attempted import error: 'useContext' is not exported from 'react'` 是无害警告，产物正常。
+- 构建前先停掉占用 `out/` 的 `http.server`（EBUSY 导致构建 EXIT=1 但误报成功）。
+- 未获用户确认不 push 远端（merge 后镜像 origin 无 upstream 提交，push 会带上全部历史）。
