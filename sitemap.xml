@@ -6,21 +6,41 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
     <loc>https://ligan.cc</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>daily</changefreq>
     </url>
     <url>
     <loc>https://ligan.cc/archive</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>daily</changefreq>
     </url>
     <url>
     <loc>https://ligan.cc/category</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>daily</changefreq>
     </url>
     <url>
     <loc>https://ligan.cc/tag</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    </url>
+    <url>
+    <loc>https://ligan.cc/article/china-first-commercial-bci-neo</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>daily</changefreq>
+    </url>
+    <url>
+    <loc>https://ligan.cc/article/jnj-ottava-fda-robotic-surgery</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    </url>
+    <url>
+    <loc>https://ligan.cc/service-design</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    </url>
+    <url>
+    <loc>https://ligan.cc/article/ai-wearable-sensors-detect-inflammation-before-symptoms</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>daily</changefreq>
     </url>

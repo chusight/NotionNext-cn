@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="207" failures="0" errors="0" time="4.698">
+  <testsuite name="withFileLock" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:54" time="1.294" tests="2">
+    <testcase classname="withFileLock waits for the lock holder cache result instead of bypassing in wait mode" name="withFileLock waits for the lock holder cache result instead of bypassing in wait mode" time="0.543">
+    </testcase>
+    <testcase classname="withFileLock keeps the default timeout bypass behavior for existing callers" name="withFileLock keeps the default timeout bypass behavior for existing callers" time="0.516">
+    </testcase>
+  </testsuite>
+  <testsuite name="LazyImage Component" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:55" time="0.514" tests="13">
+    <testcase classname="LazyImage Component renders with required props" name="LazyImage Component renders with required props" time="0.016">
+    </testcase>
+    <testcase classname="LazyImage Component applies custom className" name="LazyImage Component applies custom className" time="0.002">
+    </testcase>
+    <testcase classname="LazyImage Component sets width and height attributes" name="LazyImage Component sets width and height attributes" time="0.003">
+    </testcase>
+    <testcase classname="LazyImage Component handles priority loading" name="LazyImage Component handles priority loading" time="0.003">
+    </testcase>
+    <testcase classname="LazyImage Component uses lazy loading by default" name="LazyImage Component uses lazy loading by default" time="0.002">
+    </testcase>
+    <testcase classname="LazyImage Component handles click events" name="LazyImage Component handles click events" time="0.003">
+    </testcase>
+    <testcase classname="LazyImage Component sets up IntersectionObserver when not priority" name="LazyImage Component sets up IntersectionObserver when not priority" time="0.001">
+    </testcase>
+    <testcase classname="LazyImage Component does not set up IntersectionObserver for priority images" name="LazyImage Component does not set up IntersectionObserver for priority images" time="0.002">
+    </testcase>
+    <testcase classname="LazyImage Component handles load event" name="LazyImage Component handles load event" time="0.005">
+    </testcase>
+    <testcase classname="LazyImage Component handles error gracefully" name="LazyImage Component handles error gracefully" time="0.009">
+    </testcase>
+    <testcase classname="LazyImage Component applies correct decoding attribute" name="LazyImage Component applies correct decoding attribute" time="0.001">
+    </testcase>
+    <testcase classname="LazyImage Component handles missing src gracefully" name="LazyImage Component handles missing src gracefully" time="0">
+    </testcase>
+    <testcase classname="LazyImage Component applies custom styles" name="LazyImage Component applies custom styles" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="NotionEmbed HTML artifact auto height" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:56" time="0.135" tests="7">
+    <testcase classname="NotionEmbed HTML artifact auto height injects the resize bridge and applies reported content height" name="NotionEmbed HTML artifact auto height injects the resize bridge and applies reported content height" time="0.016">
+    </testcase>
+    <testcase classname="NotionEmbed HTML artifact auto height requests a fresh measurement when the iframe loads" name="NotionEmbed HTML artifact auto height requests a fresh measurement when the iframe loads" time="0.005">
+    </testcase>
+    <testcase classname="NotionEmbed HTML artifact auto height ignores resize messages from other windows or with the wrong type" name="NotionEmbed HTML artifact auto height ignores resize messages from other windows or with the wrong type" time="0.005">
+    </testcase>
+    <testcase classname="NotionEmbed HTML artifact auto height keeps ordinary iframe embeds unchanged" name="NotionEmbed HTML artifact auto height keeps ordinary iframe embeds unchanged" time="0.006">
+    </testcase>
+    <testcase classname="HTML artifact resize helpers normalizes and clamps reported heights" name="HTML artifact resize helpers normalizes and clamps reported heights" time="0.001">
+    </testcase>
+    <testcase classname="HTML artifact resize helpers injects a valid bridge before the closing body tag" name="HTML artifact resize helpers injects a valid bridge before the closing body tag" time="0.001">
+    </testcase>
+    <testcase classname="HTML artifact resize helpers falls back to the closing html tag or the end of a fragment" name="HTML artifact resize helpers falls back to the closing html tag or the end of a fragment" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="NotionLink" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:56" time="0.108" tests="7">
+    <testcase classname="NotionLink opens external http links in a new tab" name="NotionLink opens external http links in a new tab" time="0.007">
+    </testcase>
+    <testcase classname="NotionLink keeps same-origin absolute links in current tab" name="NotionLink keeps same-origin absolute links in current tab" time="0.002">
+    </testcase>
+    <testcase classname="NotionLink preserves existing rel tokens when forcing a new tab" name="NotionLink preserves existing rel tokens when forcing a new tab" time="0.002">
+    </testcase>
+    <testcase classname="NotionLink keeps mailto links in current tab by default" name="NotionLink keeps mailto links in current tab by default" time="0.002">
+    </testcase>
+    <testcase classname="NotionLink keeps explicit blank targets and adds safe rel tokens" name="NotionLink keeps explicit blank targets and adds safe rel tokens" time="0.002">
+    </testcase>
+    <testcase classname="shouldOpenNotionLinkInNewTab returns true for explicit blank targets and cross-origin http links" name="shouldOpenNotionLinkInNewTab returns true for explicit blank targets and cross-origin http links" time="0.001">
+    </testcase>
+    <testcase classname="shouldOpenNotionLinkInNewTab returns false for non-http links and same-origin http links" name="shouldOpenNotionLinkInNewTab returns false for non-http links and same-origin http links" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="proxio MenuList" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:56" time="0.111" tests="3">
+    <testcase classname="proxio MenuList falls back to default links when CUSTOM_MENU is enabled but customMenu is empty" name="proxio MenuList falls back to default links when CUSTOM_MENU is enabled but customMenu is empty" time="0.007">
+    </testcase>
+    <testcase classname="proxio MenuList uses custom menu links when CUSTOM_MENU is enabled and customMenu has items" name="proxio MenuList uses custom menu links when CUSTOM_MENU is enabled and customMenu has items" time="0.002">
+    </testcase>
+    <testcase classname="proxio MenuList merges customNav with default links when CUSTOM_MENU is disabled" name="proxio MenuList merges customNav with default links when CUSTOM_MENU is disabled" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="proxio Blog" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:56" time="0.09" tests="2">
+    <testcase classname="proxio Blog keeps the cover hidden behind the summary by default" name="proxio Blog keeps the cover hidden behind the summary by default" time="0.004">
+    </testcase>
+    <testcase classname="proxio Blog shows the post cover by default when PROXIO_BLOG_AUTO_SHOW_COVER is enabled" name="proxio Blog shows the post cover by default when PROXIO_BLOG_AUTO_SHOW_COVER is enabled" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="formatNotionBlock" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:56" time="0.128" tests="13">
+    <testcase classname="formatNotionBlock detects Apple Music single-track embed URLs" name="formatNotionBlock detects Apple Music single-track embed URLs" time="0">
+    </testcase>
+    <testcase classname="formatNotionBlock rewrites Apple Music song video blocks to embeds directly" name="formatNotionBlock rewrites Apple Music song video blocks to embeds directly" time="0.001">
+    </testcase>
+    <testcase classname="formatNotionBlock rewrites external video player pages to embeds directly" name="formatNotionBlock rewrites external video player pages to embeds directly" time="0.001">
+    </testcase>
+    <testcase classname="formatNotionBlock leaves non-matching video blocks unchanged during direct normalization" name="formatNotionBlock leaves non-matching video blocks unchanged during direct normalization" time="0">
+    </testcase>
+    <testcase classname="formatNotionBlock normalizes Apple Music song embeds from video blocks to embed blocks" name="formatNotionBlock normalizes Apple Music song embeds from video blocks to embed blocks" time="0.001">
+    </testcase>
+    <testcase classname="formatNotionBlock normalizes external video player pages from video blocks to embed blocks" name="formatNotionBlock normalizes external video player pages from video blocks to embed blocks" time="0">
+    </testcase>
+    <testcase classname="formatNotionBlock relinks synced block content children to the original parent" name="formatNotionBlock relinks synced block content children to the original parent" time="0.001">
+    </testcase>
+    <testcase classname="formatNotionBlock relinks synced block inline children to the original parent" name="formatNotionBlock relinks synced block inline children to the original parent" time="0">
+    </testcase>
+    <testcase classname="formatNotionBlock keeps regular hosted videos as video blocks" name="formatNotionBlock keeps regular hosted videos as video blocks" time="0.001">
+    </testcase>
+    <testcase classname="formatNotionBlock rewrites newer Notion pdf file URLs to signed URLs" name="formatNotionBlock rewrites newer Notion pdf file URLs to signed URLs" time="0">
+    </testcase>
+    <testcase classname="formatNotionBlock does not rewrite lookalike Notion file URLs" name="formatNotionBlock does not rewrite lookalike Notion file URLs" time="0.001">
+    </testcase>
+    <testcase classname="formatNotionBlock detects expired cached Notion signed URLs" name="formatNotionBlock detects expired cached Notion signed URLs" time="0">
+    </testcase>
+    <testcase classname="formatNotionBlock uses stable Notion signed entry for pdf preview URLs" name="formatNotionBlock uses stable Notion signed entry for pdf preview URLs" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="heo InfoCard greetings" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.086" tests="5">
+    <testcase classname="heo InfoCard greetings keeps configured greeting arrays intact" name="heo InfoCard greetings keeps configured greeting arrays intact" time="0.001">
+    </testcase>
+    <testcase classname="heo InfoCard greetings parses Notion string arrays that use single quotes" name="heo InfoCard greetings parses Notion string arrays that use single quotes" time="0">
+    </testcase>
+    <testcase classname="heo InfoCard greetings treats a plain string as a single greeting" name="heo InfoCard greetings treats a plain string as a single greeting" time="0">
+    </testcase>
+    <testcase classname="heo InfoCard avatar blur uses the decorative blur avatar only on slug pages when enabled" name="heo InfoCard avatar blur uses the decorative blur avatar only on slug pages when enabled" time="0">
+    </testcase>
+    <testcase classname="heo InfoCard avatar blur keeps the normal avatar when the option is disabled" name="heo InfoCard avatar blur keeps the normal avatar when the option is disabled" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="getAllTags" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.063" tests="1">
+    <testcase classname="getAllTags counts only published posts for public tag options" name="getAllTags counts only published posts for public tag options" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="adjustPageProperties" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.086" tests="1">
+    <testcase classname="adjustPageProperties uses category mapping for pages only when the page category is mapped" name="adjustPageProperties uses category mapping for pages only when the page category is mapped" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="generateRss" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.049" tests="2">
+    <testcase classname="generateRss adapts and formats blockMap before rendering RSS content" name="generateRss adapts and formats blockMap before rendering RSS content" time="0.002">
+    </testcase>
+    <testcase classname="generateRss generates RSS only for the default locale during multi-locale builds" name="generateRss generates RSS only for the default locale during multi-locale builds" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="getInitialHue" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.088" tests="2">
+    <testcase classname="getInitialHue uses configured hue when the Fuwari theme color is fixed" name="getInitialHue uses configured hue when the Fuwari theme color is fixed" time="0">
+    </testcase>
+    <testcase classname="getInitialHue keeps the stored hue when the palette is editable" name="getInitialHue keeps the stored hue when the palette is editable" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="memberDataSource" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.045" tests="2">
+    <testcase classname="memberDataSource maps an official Notion member page to site data" name="memberDataSource maps an official Notion member page to site data" time="0.002">
+    </testcase>
+    <testcase classname="memberDataSource paginates official API results and filters unpublished members" name="memberDataSource paginates official API results and filters unpublished members" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="translate/block-mapper" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.042" tests="7">
+    <testcase classname="translate/block-mapper paragraph rich_text gets translated" name="translate/block-mapper paragraph rich_text gets translated" time="0.001">
+    </testcase>
+    <testcase classname="translate/block-mapper non-mermaid code blocks are preserved verbatim" name="translate/block-mapper non-mermaid code blocks are preserved verbatim" time="0">
+    </testcase>
+    <testcase classname="translate/block-mapper mermaid code blocks translate labels with a hint" name="translate/block-mapper mermaid code blocks translate labels with a hint" time="0">
+    </testcase>
+    <testcase classname="translate/block-mapper column_list returns null (skipped)" name="translate/block-mapper column_list returns null (skipped)" time="0.001">
+    </testcase>
+    <testcase classname="translate/block-mapper image blocks pass through without translation" name="translate/block-mapper image blocks pass through without translation" time="0">
+    </testcase>
+    <testcase classname="translate/block-mapper rebuildRichText preserves single-segment annotations" name="translate/block-mapper rebuildRichText preserves single-segment annotations" time="0">
+    </testcase>
+    <testcase classname="translate/block-mapper richTextToString concatenates all segments" name="translate/block-mapper richTextToString concatenates all segments" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="sortPinnedPostsByLatestUpdate" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.039" tests="4">
+    <testcase classname="sortPinnedPostsByLatestUpdate returns original array when topTag is falsy" name="sortPinnedPostsByLatestUpdate returns original array when topTag is falsy" time="0">
+    </testcase>
+    <testcase classname="sortPinnedPostsByLatestUpdate does not change non-pinned indices; only reorders pinned subset by lastEditedDate desc" name="sortPinnedPostsByLatestUpdate does not change non-pinned indices; only reorders pinned subset by lastEditedDate desc" time="0.001">
+    </testcase>
+    <testcase classname="sortPinnedPostsByLatestUpdate keeps pinned relative order when lastEditedDate is equal (stable)" name="sortPinnedPostsByLatestUpdate keeps pinned relative order when lastEditedDate is equal (stable)" time="0">
+    </testcase>
+    <testcase classname="sortPinnedPostsByLatestUpdate returns original array when pinned count &lt;= 1" name="sortPinnedPostsByLatestUpdate returns original array when pinned count &lt;= 1" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="convertInnerUrl" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.044" tests="2">
+    <testcase classname="convertInnerUrl maps notice links to published Page records from allLinkPages" name="convertInnerUrl maps notice links to published Page records from allLinkPages" time="0.004">
+    </testcase>
+    <testcase classname="convertInnerUrl does not resolve Page links when only post navigation data is present" name="convertInnerUrl does not resolve Page links when only post navigation data is present" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="SEO structured data" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.061" tests="2">
+    <testcase classname="SEO structured data generates BlogPosting data for published articles" name="SEO structured data generates BlogPosting data for published articles" time="0.001">
+    </testcase>
+    <testcase classname="SEO structured data generates WebSite data for non-article pages" name="SEO structured data generates WebSite data for non-article pages" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Notion data format compatibility" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.066" tests="37">
+    <testcase classname="Notion data format compatibility unwraps nested block values returned by newer Notion payloads" name="Notion data format compatibility unwraps nested block values returned by newer Notion payloads" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility extracts page ids from collection view page_sort in newer payloads" name="Notion data format compatibility extracts page ids from collection view page_sort in newer payloads" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility supplements truncated page_sort from the selected view query only" name="Notion data format compatibility supplements truncated page_sort from the selected view query only" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility extracts page ids from reducerResults collection group data" name="Notion data format compatibility extracts page ids from reducerResults collection group data" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility does not merge reducerResults when collection group results are explicitly empty" name="Notion data format compatibility does not merge reducerResults when collection group results are explicitly empty" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility does not fall back to page_sort when the selected view query is empty" name="Notion data format compatibility does not fall back to page_sort when the selected view query is empty" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility matches selected view query when collection ids use different uuid formats" name="Notion data format compatibility matches selected view query when collection ids use different uuid formats" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility matches selected view data when view ids use different uuid formats" name="Notion data format compatibility matches selected view data when view ids use different uuid formats" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility falls back to all query blocks when no selected view is available" name="Notion data format compatibility falls back to all query blocks when no selected view is available" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility filters embedded collection query results by selected view filters" name="Notion data format compatibility filters embedded collection query results by selected view filters" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility matches multi-select contains filters when values are comma-separated" name="Notion data format compatibility matches multi-select contains filters when values are comma-separated" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility matches multi-select does-not-contain filters when values are comma-separated" name="Notion data format compatibility matches multi-select does-not-contain filters when values are comma-separated" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility normalizes reducerResults collection group data for gallery rendering" name="Notion data format compatibility normalizes reducerResults collection group data for gallery rendering" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility does not replace existing collection group results with reducerResults" name="Notion data format compatibility does not replace existing collection group results with reducerResults" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility matches localized Notion status values through status groups" name="Notion data format compatibility matches localized Notion status values through status groups" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility filters embedded collection results from query2 compound filters" name="Notion data format compatibility filters embedded collection results from query2 compound filters" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility sorts embedded collection results from query2 text sorts" name="Notion data format compatibility sorts embedded collection results from query2 text sorts" time="0.006">
+    </testcase>
+    <testcase classname="Notion data format compatibility sorts embedded collection results from query2 number sorts" name="Notion data format compatibility sorts embedded collection results from query2 number sorts" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility sorts embedded collection results from query2 date sorts" name="Notion data format compatibility sorts embedded collection results from query2 date sorts" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility sorts embedded collection date results by time on the same day" name="Notion data format compatibility sorts embedded collection date results by time on the same day" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility sorts embedded collection results from query2 select sorts by option order" name="Notion data format compatibility sorts embedded collection results from query2 select sorts by option order" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility inherits sibling filters for embedded collection views without filters" name="Notion data format compatibility inherits sibling filters for embedded collection views without filters" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility normalizes nested blocks and strips crdt fields before rendering" name="Notion data format compatibility normalizes nested blocks and strips crdt fields before rendering" time="0.001">
+    </testcase>
+    <testcase classname="Notion data format compatibility downgrades newer heading block types for older renderers" name="Notion data format compatibility downgrades newer heading block types for older renderers" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility keeps header_4 blocks as renderable fourth-level headings" name="Notion data format compatibility keeps header_4 blocks as renderable fourth-level headings" time="0">
+    </testcase>
+    <testcase classname="Notion data format compatibility builds a stable toc for newer heading block types" name="Notion data format compatibility builds a stable toc for newer heading block types" time="0.001">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://embed.music.apple.com/us/song/neon-blue/324357768&quot; → true" name="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://embed.music.apple.com/us/song/neon-blue/324357768&quot; → true" time="0">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://embed.music.apple.com/cn/song/test-song/123456&quot; → true" name="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://embed.music.apple.com/cn/song/test-song/123456&quot; → true" time="0">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://embed.music.apple.com/us/album/girls-come-too/324357208?i=324357768&quot; → false" name="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://embed.music.apple.com/us/album/girls-come-too/324357208?i=324357768&quot; → false" time="0">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://embed.music.apple.com/us/album/test/123456&quot; → false" name="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://embed.music.apple.com/us/album/test/123456&quot; → false" time="0">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://www.youtube.com/watch?v=abc&quot; → false" name="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;https://www.youtube.com/watch?v=abc&quot; → false" time="0.001">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;&quot; → false" name="normalizeExternalMediaBlock — Apple Music song embeds isAppleMusicEmbedUrl &quot;&quot; → false" time="0">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock converts video → embed for Apple Music song URLs" name="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock converts video → embed for Apple Music song URLs" time="0">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock leaves video type unchanged for Apple Music album URLs" name="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock leaves video type unchanged for Apple Music album URLs" time="0">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock leaves video type unchanged for non–Apple Music URLs" name="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock leaves video type unchanged for non–Apple Music URLs" time="0.001">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock does nothing for non-video block types" name="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock does nothing for non-video block types" time="0">
+    </testcase>
+    <testcase classname="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock handles null / undefined / missing properties gracefully" name="normalizeExternalMediaBlock — Apple Music song embeds normalizeExternalMediaBlock handles null / undefined / missing properties gracefully" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="staticPaths build helpers" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.054" tests="4">
+    <testcase classname="staticPaths build helpers shares allPages lookups within a process" name="staticPaths build helpers shares allPages lookups within a process" time="0.005">
+    </testcase>
+    <testcase classname="staticPaths build helpers does not keep a rejected allPages lookup pinned in process memory" name="staticPaths build helpers does not keep a rejected allPages lookup pinned in process memory" time="0.005">
+    </testcase>
+    <testcase classname="staticPaths build helpers prefetches once per route call in export mode and returns all matching paths" name="staticPaths build helpers prefetches once per route call in export mode and returns all matching paths" time="0.002">
+    </testcase>
+    <testcase classname="staticPaths build helpers uses priority pages in ISR mode" name="staticPaths build helpers uses priority pages in ISR mode" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="originalityProof" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.045" tests="7">
+    <testcase classname="originalityProof supports global opt-in, per-post opt-in, and metadata auto opt-in" name="originalityProof supports global opt-in, per-post opt-in, and metadata auto opt-in" time="0">
+    </testcase>
+    <testcase classname="originalityProof generates a deterministic content hash" name="originalityProof generates a deterministic content hash" time="0">
+    </testcase>
+    <testcase classname="originalityProof changes the local hash when content changes" name="originalityProof changes the local hash when content changes" time="0.001">
+    </testcase>
+    <testcase classname="originalityProof uses an external proof hash when provided" name="originalityProof uses an external proof hash when provided" time="0">
+    </testcase>
+    <testcase classname="originalityProof treats ext proof urls as external proof metadata" name="originalityProof treats ext proof urls as external proof metadata" time="0.001">
+    </testcase>
+    <testcase classname="originalityProof formats copyable proof evidence" name="originalityProof formats copyable proof evidence" time="0">
+    </testcase>
+    <testcase classname="originalityProof applies a public manifest record to a local proof" name="originalityProof applies a public manifest record to a local proof" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="stripTransientQueryParamsFromUrl" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.04" tests="3">
+    <testcase classname="stripTransientQueryParamsFromUrl removes giscus and target from full URL" name="stripTransientQueryParamsFromUrl removes giscus and target from full URL" time="0.001">
+    </testcase>
+    <testcase classname="stripTransientQueryParamsFromAsPath strips giscus from asPath" name="stripTransientQueryParamsFromAsPath strips giscus from asPath" time="0.001">
+    </testcase>
+    <testcase classname="stripTransientQueryParamsFromAsPath preserves other query and hash" name="stripTransientQueryParamsFromAsPath preserves other query and hash" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="translate/state" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.04" tests="5">
+    <testcase classname="translate/state sha256OfBlocks is deterministic for identical inputs" name="translate/state sha256OfBlocks is deterministic for identical inputs" time="0.001">
+    </testcase>
+    <testcase classname="translate/state sha256OfBlocks changes when content changes" name="translate/state sha256OfBlocks changes when content changes" time="0">
+    </testcase>
+    <testcase classname="translate/state block-type classifications are disjoint" name="translate/state block-type classifications are disjoint" time="0.002">
+    </testcase>
+    <testcase classname="translate/state column_list and table are skipped (require inlined children on create)" name="translate/state column_list and table are skipped (require inlined children on create)" time="0">
+    </testcase>
+    <testcase classname="translate/state mermaid is in TRANSLATABLE_CODE_LANGUAGES" name="translate/state mermaid is in TRANSLATABLE_CODE_LANGUAGES" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="getPageCanCopy" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:57" time="0.042" tests="2">
+    <testcase classname="getPageCanCopy falls back to site copy setting" name="getPageCanCopy falls back to site copy setting" time="0">
+    </testcase>
+    <testcase classname="getPageCanCopy lets page copy setting override site setting" name="getPageCanCopy lets page copy setting override site setting" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="starter Features" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.054" tests="1">
+    <testcase classname="starter Features renders independent text and links for the third and fourth features" name="starter Features renders independent text and links for the third and fourth features" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validator" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.053" tests="24">
+    <testcase classname="Validator isValidEmail validates correct email addresses" name="Validator isValidEmail validates correct email addresses" time="0">
+    </testcase>
+    <testcase classname="Validator isValidEmail rejects invalid email addresses" name="Validator isValidEmail rejects invalid email addresses" time="0.001">
+    </testcase>
+    <testcase classname="Validator isValidUrl validates correct URLs" name="Validator isValidUrl validates correct URLs" time="0">
+    </testcase>
+    <testcase classname="Validator isValidUrl rejects invalid URLs" name="Validator isValidUrl rejects invalid URLs" time="0.001">
+    </testcase>
+    <testcase classname="Validator isValidSlug validates correct slugs" name="Validator isValidSlug validates correct slugs" time="0">
+    </testcase>
+    <testcase classname="Validator isValidSlug rejects invalid slugs" name="Validator isValidSlug rejects invalid slugs" time="0.001">
+    </testcase>
+    <testcase classname="Validator isValidNotionId validates correct Notion IDs" name="Validator isValidNotionId validates correct Notion IDs" time="0">
+    </testcase>
+    <testcase classname="Validator isValidNotionId rejects invalid Notion IDs" name="Validator isValidNotionId rejects invalid Notion IDs" time="0">
+    </testcase>
+    <testcase classname="Validator isValidLength validates string length correctly" name="Validator isValidLength validates string length correctly" time="0.001">
+    </testcase>
+    <testcase classname="Validator isValidLength rejects strings outside length range" name="Validator isValidLength rejects strings outside length range" time="0">
+    </testcase>
+    <testcase classname="Validator isValidNumber validates numbers in range" name="Validator isValidNumber validates numbers in range" time="0">
+    </testcase>
+    <testcase classname="Validator isValidNumber rejects numbers outside range" name="Validator isValidNumber rejects numbers outside range" time="0">
+    </testcase>
+    <testcase classname="Sanitizer stripHtml removes HTML tags" name="Sanitizer stripHtml removes HTML tags" time="0.001">
+    </testcase>
+    <testcase classname="Sanitizer stripHtml handles empty or null input" name="Sanitizer stripHtml handles empty or null input" time="0">
+    </testcase>
+    <testcase classname="Sanitizer sanitizeXss removes XSS patterns" name="Sanitizer sanitizeXss removes XSS patterns" time="0.001">
+    </testcase>
+    <testcase classname="Sanitizer sanitizeXss preserves safe content" name="Sanitizer sanitizeXss preserves safe content" time="0">
+    </testcase>
+    <testcase classname="Sanitizer sanitizeFilename removes illegal characters" name="Sanitizer sanitizeFilename removes illegal characters" time="0">
+    </testcase>
+    <testcase classname="Sanitizer sanitizeFilename replaces spaces with underscores" name="Sanitizer sanitizeFilename replaces spaces with underscores" time="0">
+    </testcase>
+    <testcase classname="Sanitizer sanitizeFilename removes leading and trailing dots" name="Sanitizer sanitizeFilename removes leading and trailing dots" time="0.001">
+    </testcase>
+    <testcase classname="Sanitizer escapeHtml escapes HTML entities" name="Sanitizer escapeHtml escapes HTML entities" time="0">
+    </testcase>
+    <testcase classname="RateLimiter allows requests within limit" name="RateLimiter allows requests within limit" time="0.001">
+    </testcase>
+    <testcase classname="RateLimiter blocks requests over limit" name="RateLimiter blocks requests over limit" time="0.001">
+    </testcase>
+    <testcase classname="RateLimiter resets after time window" name="RateLimiter resets after time window" time="0.001">
+    </testcase>
+    <testcase classname="RateLimiter handles different users separately" name="RateLimiter handles different users separately" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="magzine PostListRecommend" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.043" tests="2">
+    <testcase classname="magzine PostListRecommend uses the theme default recommend tag instead of falling back to latest posts" name="magzine PostListRecommend uses the theme default recommend tag instead of falling back to latest posts" time="0.001">
+    </testcase>
+    <testcase classname="magzine PostListRecommend falls back to latest posts only when the recommend tag is intentionally blank" name="magzine PostListRecommend falls back to latest posts only when the recommend tag is intentionally blank" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="originalityProofManifest" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.043" tests="3">
+    <testcase classname="originalityProofManifest creates a stable public manifest" name="originalityProofManifest creates a stable public manifest" time="0">
+    </testcase>
+    <testcase classname="originalityProofManifest records and finds a manifest proof" name="originalityProofManifest records and finds a manifest proof" time="0.001">
+    </testcase>
+    <testcase classname="originalityProofManifest parses manifest enable flags" name="originalityProofManifest parses manifest enable flags" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="sitemap-utils" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.043" tests="17">
+    <testcase classname="sitemap-utils normalizeSitemapBaseUrl trims and removes trailing slashes" name="sitemap-utils normalizeSitemapBaseUrl trims and removes trailing slashes" time="0.001">
+    </testcase>
+    <testcase classname="sitemap-utils normalizeSitemapBaseUrl returns empty string for non-string values" name="sitemap-utils normalizeSitemapBaseUrl returns empty string for non-string values" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils normalizeSiteUrl shares the same base URL normalization for non-sitemap callers" name="sitemap-utils normalizeSiteUrl shares the same base URL normalization for non-sitemap callers" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils normalizeSitemapLocale normalizes locale prefix with leading slash" name="sitemap-utils normalizeSitemapLocale normalizes locale prefix with leading slash" time="0.001">
+    </testcase>
+    <testcase classname="sitemap-utils normalizeSitemapLocale returns empty string for empty values" name="sitemap-utils normalizeSitemapLocale returns empty string for empty values" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils buildSitemapLoc builds locale home URL when slug is empty" name="sitemap-utils buildSitemapLoc builds locale home URL when slug is empty" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils buildSitemapLoc builds URL for relative slug" name="sitemap-utils buildSitemapLoc builds URL for relative slug" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils buildSitemapLoc returns null for external absolute URL" name="sitemap-utils buildSitemapLoc returns null for external absolute URL" time="0.001">
+    </testcase>
+    <testcase classname="sitemap-utils buildSitemapLoc keeps absolute URL when it points to the same host" name="sitemap-utils buildSitemapLoc keeps absolute URL when it points to the same host" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils buildSitemapLoc returns null for invalid absolute URL" name="sitemap-utils buildSitemapLoc returns null for invalid absolute URL" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils createSiteUrl builds a site URL with exactly one slash" name="sitemap-utils createSiteUrl builds a site URL with exactly one slash" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils createSiteUrl returns the normalized site URL when slug is empty" name="sitemap-utils createSiteUrl returns the normalized site URL when slug is empty" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils createSiteUrl returns null for anchor-only slugs" name="sitemap-utils createSiteUrl returns null for anchor-only slugs" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils createSiteUrl keeps same-host absolute URLs" name="sitemap-utils createSiteUrl keeps same-host absolute URLs" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils createSiteUrl drops cross-host absolute URLs" name="sitemap-utils createSiteUrl drops cross-host absolute URLs" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils toSitemapDateString formats valid date to YYYY-MM-DD" name="sitemap-utils toSitemapDateString formats valid date to YYYY-MM-DD" time="0">
+    </testcase>
+    <testcase classname="sitemap-utils toSitemapDateString falls back when date is invalid" name="sitemap-utils toSitemapDateString falls back when date is invalid" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="generateSitemapXml" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.041" tests="1">
+    <testcase classname="generateSitemapXml does not generate invalid duplicated-domain URLs for external links" name="generateSitemapXml does not generate invalid duplicated-domain URLs for external links" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="getCustomMenu" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.042" tests="3">
+    <testcase classname="getCustomMenu uses the generated page href when a menu targets the page source slug" name="getCustomMenu uses the generated page href when a menu targets the page source slug" time="0">
+    </testcase>
+    <testcase classname="getCustomMenu keeps unmatched and external menu links unchanged" name="getCustomMenu keeps unmatched and external menu links unchanged" time="0">
+    </testcase>
+    <testcase classname="getCustomMenu does not guess when multiple pages shared the same source slug" name="getCustomMenu does not guess when multiple pages shared the same source slug" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Notion Gallery visibility settings" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.041" tests="4">
+    <testcase classname="Notion Gallery visibility settings hides omitted page icons and an explicitly hidden title" name="Notion Gallery visibility settings hides omitted page icons and an explicitly hidden title" time="0.001">
+    </testcase>
+    <testcase classname="Notion Gallery visibility settings keeps a visible title while the omitted page-icon setting stays hidden" name="Notion Gallery visibility settings keeps a visible title while the omitted page-icon setting stays hidden" time="0">
+    </testcase>
+    <testcase classname="Notion Gallery visibility settings keeps page icons visible when Notion explicitly enables them" name="Notion Gallery visibility settings keeps page icons visible when Notion explicitly enables them" time="0">
+    </testcase>
+    <testcase classname="Notion Gallery visibility settings preserves legacy Gallery data without the page-icon setting" name="Notion Gallery visibility settings preserves legacy Gallery data without the page-icon setting" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="notionComments helpers" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.042" tests="4">
+    <testcase classname="notionComments helpers validates comment input" name="notionComments helpers validates comment input" time="0.001">
+    </testcase>
+    <testcase classname="notionComments helpers formats Notion database pages" name="notionComments helpers formats Notion database pages" time="0.001">
+    </testcase>
+    <testcase classname="notionComments helpers filters non-public comments" name="notionComments helpers filters non-public comments" time="0">
+    </testcase>
+    <testcase classname="notionComments helpers builds nested comment trees" name="notionComments helpers builds nested comment trees" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="resolveArticleCopyrightText" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.04" tests="5">
+    <testcase classname="resolveArticleCopyrightText uses the default notice when the legacy copyright switch is enabled" name="resolveArticleCopyrightText uses the default notice when the legacy copyright switch is enabled" time="0">
+    </testcase>
+    <testcase classname="resolveArticleCopyrightText uses post copyright when the legacy copyright switch is enabled" name="resolveArticleCopyrightText uses post copyright when the legacy copyright switch is enabled" time="0.001">
+    </testcase>
+    <testcase classname="resolveArticleCopyrightText hides copyright when both switches are disabled" name="resolveArticleCopyrightText hides copyright when both switches are disabled" time="0">
+    </testcase>
+    <testcase classname="resolveArticleCopyrightText hides copyright when the string false is configured" name="resolveArticleCopyrightText hides copyright when the string false is configured" time="0">
+    </testcase>
+    <testcase classname="resolveArticleCopyrightText shows only posts with custom copyright in custom mode" name="resolveArticleCopyrightText shows only posts with custom copyright in custom mode" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="cache/hashForCachePath" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.039" tests="2">
+    <testcase classname="cache/hashForCachePath returns a short stable filename segment" name="cache/hashForCachePath returns a short stable filename segment" time="0.001">
+    </testcase>
+    <testcase classname="cache/hashForCachePath keeps full lock path under common OS limits for multi-site keys" name="cache/hashForCachePath keeps full lock path under common OS limits for multi-site keys" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="typedCollections" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.039" tests="3">
+    <testcase classname="typedCollections filters pages by content type" name="typedCollections filters pages by content type" time="0">
+    </testcase>
+    <testcase classname="typedCollections filters published pages by content type" name="typedCollections filters published pages by content type" time="0.001">
+    </testcase>
+    <testcase classname="typedCollections sorts typed pages by publish date without mutating input" name="typedCollections sorts typed pages by publish date without mutating input" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Matery reading home" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.2" tests="2">
+    <testcase classname="Matery reading home uses recommended posts as the starting path and removes duplicates" name="Matery reading home uses recommended posts as the starting path and removes duplicates" time="0.022">
+    </testcase>
+    <testcase classname="Matery reading home falls back to the first posts and localizes headings in Chinese" name="Matery reading home falls back to the first posts and localizes headings in Chinese" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="heo PostHeader password metadata" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.058" tests="2">
+    <testcase classname="heo PostHeader password metadata hides word count and read time while the article is locked" name="heo PostHeader password metadata hides word count and read time while the article is locked" time="0.002">
+    </testcase>
+    <testcase classname="heo PostHeader password metadata shows word count and read time after the article is unlocked" name="heo PostHeader password metadata shows word count and read time after the article is unlocked" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="endspace menu helpers" errors="0" failures="0" skipped="0" timestamp="2026-08-03T02:24:58" time="0.047" tests="1">
+    <testcase classname="endspace menu helpers keeps custom submenu items and activates their parent" name="endspace menu helpers keeps custom submenu items and activates their parent" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
