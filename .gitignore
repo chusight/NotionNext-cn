@@ -36,3 +36,11 @@ node_modules/
 out/
 .env.local
 .env*.local
+# 本地敏感/临时脚本（不得提交）
+capture_gcm.py
+decrypt_gh.ps1
+get_github_cred.ps1
+get_token.ps1
+publish_blog.py
+dump_news.py
+blog_*.md
