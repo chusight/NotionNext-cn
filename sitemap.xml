@@ -6,21 +6,31 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
     <loc>https://ligan.cc</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>daily</changefreq>
     </url>
     <url>
     <loc>https://ligan.cc/archive</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>daily</changefreq>
     </url>
     <url>
     <loc>https://ligan.cc/category</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>daily</changefreq>
     </url>
     <url>
     <loc>https://ligan.cc/tag</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>daily</changefreq>
+    </url>
+    <url>
+    <loc>https://ligan.cc/article/snap-specs-launch-sep-16</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>daily</changefreq>
+    </url>
+    <url>
+    <loc>https://ligan.cc/article/apple-smart-glasses-health-platform</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>daily</changefreq>
     </url>
