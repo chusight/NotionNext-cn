@@ -17,11 +17,17 @@ const CONFIG = {
   OPC_NOW_DESCRIPTION:
     '持续记录科技前沿动态、设计思考与项目进展，所有内容按领域沉淀为长期记录。', // 近况说明
   OPC_NOW_ITEMS: '工业设计,医疗器械,AI前沿,AR/VR,计算机图形学,传感器,服务设计', // 近况标签，英文逗号分隔
+  OPC_METHOD_TITLE: '化繁为简，先拆解再落地', // 方法段标题
+  OPC_METHOD_DESCRIPTION:
+    '每轮只推进一个最小可验证目标：先梳理结构与边界，再逐步验证，最后沉淀为可复用的设计规范。', // 方法段说明
+  OPC_RECORDS_TITLE: '长期记录', // 记录段标题
+  OPC_RECORDS_DESCRIPTION:
+    '科技前沿动态、设计思考与项目进展的公开记录，按时间累积。', // 记录段说明
   OPC_COLOR_PRIMARY: '#2563eb', // 浅色主色
   OPC_COLOR_BG: '#f8fafc', // 浅色页面背景
   OPC_COLOR_CARD: '#ffffff', // 浅色卡片背景
   OPC_COLOR_TEXT: '#111827', // 浅色主文字
-  OPC_COLOR_TEXT_SECONDARY: '#64748b', // 浅色次级文字
+  OPC_COLOR_TEXT_SECONDARY: '#556070', // 浅色次级文字
   OPC_COLOR_BORDER: '#e2e8f0', // 浅色边框
   OPC_COLOR_PRIMARY_DARK: '#60a5fa', // 深色主色
   OPC_COLOR_BG_DARK: '#020617', // 深色页面背景
